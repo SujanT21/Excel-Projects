@@ -1,66 +1,65 @@
-### Excel-Projects
+# Excel Projects
 
-Advanced Excel projects showcasing data analysis, visualization, and BI skills, leveraging pivot tables and dashboards for strategic insights.
+Excel analysis and dashboard projects. Currently one project: **Social Buzz content analysis**.
 
+## Social Buzz content analysis (Excel)
 
-------Social Buzz Data Analysis Project-------
+An Excel rebuild of the Accenture North America *Data Analytics and Visualization* job simulation on Forage.
+The original simulation work, visualised in Tableau, is in
+[Accenture-Simulation](https://github.com/SujanT21/Accenture-Simulation). This version focuses on doing the
+whole job in Excel: cleaning, pivot tables, an interactive dashboard, and a client presentation.
 
-This repository contains the deliverables for the Social Buzz Data Analysis project, completed as part of my Master’s in Data Science. The project focuses on analyzing social media content engagement to derive actionable business insights, showcasing advanced Excel skills and BI competencies.
+### The brief
 
+Social Buzz, a fictional social media platform with 100,000+ posts a day (about 36.5M a year), wanted to know
+its **top 5 content categories by popularity** to shape its content strategy.
 
-Project Overview
+### What I did
 
-The project involved processing and analyzing a dataset of social media reactions to identify key trends and optimize content strategy. Key tasks included data cleaning, pivot table creation, dashboard development, and presenting insights to stakeholders.
+| Step | Excel work |
+|---|---|
+| Cleaning | Text to Columns, Remove Duplicates, filters and conditional formatting to fix and flag bad rows |
+| Joining | VLOOKUP to bring category and reaction score onto every reaction record |
+| Analysis | Pivot tables with grouping and calculated fields to rank ~24,500 reactions across 16 categories |
+| Dashboard | Interactive dashboard with slicers and a time-trend line chart (June 2020 to June 2021) |
+| Presentation | 11-slide client deck with insights, recommendations and next steps |
 
+### Key insights
 
-Repository Structure
+| Rank | Category | Popularity score |
+|---|---|---|
+| 1 | Animals | ~74,965 |
+| 2 | Science | ~71,168 |
+| 3 | Healthy Eating | ~69,339 |
+| 4 | Technology | ~68,738 |
+| 5 | Food | ~66,676 |
 
+- **Food-related categories engage strongly**, and Healthy Eating outranks Food: the audience looks health-conscious.
+- **January was the most active month**, likely post-holiday social activity.
+- **The top 5 are close together**, with Animals only slightly ahead; without balanced recommendations one
+  category could crowd out the rest.
 
-Brief: Social Buzz Problem Brief & Raw Datasets
+**Recommendations:** healthy-eating campaigns with brand partners, balanced content algorithms, and scaling
+the sample dashboard into live analytics.
 
-Contains the initial problem statement and raw data files provided for analysis.
+### Repository contents
 
+| Path | What it is |
+|---|---|
+| `Brief/` | Client brief, data model, stakeholder chart and presentation guide |
+| `Dataset/` | Raw CSVs: `Content`, `Reactions`, `ReactionTypes` |
+| `Processed data, Pivot table & Dashboard/` | Excel workbook: cleaned data, pivot tables and the dashboard |
+| `Insight Presentation/` | Client presentation (`.pptx`) |
+| `The Data Analyst's role in Identifying Stakeholders.docx` | Short note on stakeholder mapping for the project |
 
-Dataset: Social Buzz Problem Brief & Raw Datasets
+### How to open
 
-Includes the raw dataset used for the analysis, detailing reaction records.
+Open the workbook in `Processed data, Pivot table & Dashboard/` in Excel (2016 or later) and use the slicers on
+the dashboard sheet. The deck is in `Insight Presentation/`.
 
-Insight Presentation: Presenting the Data Insights to the Client
+### Skills
 
-PowerPoint presentation summarizing findings and recommendations.
+Excel data cleaning, VLOOKUP and IF logic, data validation, pivot tables and calculated fields, dashboards with
+slicers, and presenting insights to stakeholders.
 
-Processed data, Pivot table & Dashboard: Processed the data. Then developed Pivot Tables & Dashboards...
-
-Contains processed data files, pivot tables, and an interactive Excel dashboard with a Time Trend Line Chart.
-
-
-README.md: Update README.md
-
-This file, providing an overview and instructions for the repository.
-
-The Data Analyst's role in identifying Stakeholders...: The Data Analyst's role in identifying Stakeholders
-
-Document outlining the analyst’s role in stakeholder engagement.
-
-
-Skills Demonstrated
-
-
-Excel (Advanced): Data Cleaning (Text to Columns, Remove Duplicates, Filters, Conditional Formatting), Visualization (Time Trend Line Charts, Bar/Pie Charts, Slicers, Dashboards), Pivot Tables (Grouping, Calculated Fields, Data Aggregation), Data Analysis (VLOOKUP, IF Functions, Data Validation).
-
-Other Skills: Data Visualization, SQL (Basic), Python (Basic with python-pptx), Stakeholder Communication.
-
-
-Project Highlights
-
-
--Analyzed ~24,573 reaction records to rank top content categories.
-
--Developed an interactive dashboard with slicers to visualize trends across 16 categories (June 2020–June 2021).
-
--Presented actionable insights, recommending targeted campaigns and content balancing strategies.
-
-Usage:
-Clone the repository to explore the files.
-Open Processed data, Pivot table & Dashboard to view the Excel workbook.
-Review Insight Presentation for the final deliverable.
+The brief, data and company are fictional and were provided by Accenture through Forage.
